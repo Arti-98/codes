@@ -1,0 +1,14 @@
+Security Checklist
+
+1) Authentication Tests:
+-Enroll without a token
+-Expired a token
+-Privilege escalation
+
+2)Input Validation :
+-SQL injection
+-XSS in the course ID
+
+3)Response behaviour:
+-Error message
+-Missing security headers
