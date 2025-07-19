@@ -1,0 +1,20 @@
+let input =  "apple banana apple orange banana apple";
+
+let words = input.split(" ");
+let freq = {};
+let max = 0;
+let result = "";
+
+for(let i=0; i<words.length; i++){
+  let Word = words[i];
+  if(freq[Word] === undefined){
+    freq[Word] = 1;
+  }else {
+    freq[Word]++;
+  }
+  if(freq[Word] > max){
+    max = freq[Word];
+    result = Word;
+  }
+}
+console.log(result);
