@@ -1,0 +1,20 @@
+Performance Test Plan 
+
+Test Goal: Access the performance of the courses API under 5 concurrent users.
+
+Endpoint: /auth/login/courses/enroll
+
+Ramp-up: 1 to 5 users over 1 minute 40 seconds.
+
+Duration: 5 minutes
+
+Think time: 1 to 3 seconds between requests
+
+Success Criteria:
+-Avg response time < 1 second
+-Error Rate < 2%
+-Throughput > 50 requests/seconds 
+
+Assumptions :
+-API accepts valid credentials
+-Access token is valid for 0 mins
